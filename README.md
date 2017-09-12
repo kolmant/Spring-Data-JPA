@@ -117,12 +117,12 @@ public interface PatientsRepository extends JpaRepository<Paciente, PacienteId>
 9. Para implementar la prueba, haga en en la clase JUnit se inyecten tanto los servicios de paciente y el repositorio de pacientes. Realice las siguientes pruebas, haciendo uso del 'repositorio' para agregar los datos iniciales, y de los servicios para hacer las consultas:
 
 
-	| Método | Clase de equivalencia        | Prueba           | 
+| Método | Clase de equivalencia | Prueba | 
 |-----| ------------- |:-------------:| 
-| getPatient(id,tipoid)| Consulta a paciente que existe      | Registrar un paciente, consultarlo a través de los servcios, y rectificar que sea el mismo | 
-| getPatient(id,tipoid)| Consulta a paciente que no existe      | Consultar a través de los servicios un paciente no registrado, y esperar que se produzca el error | 
-| topPatients(N)| No existen pacientes con N o más consultas      | Registrar un paciente con sólo 1 consulta. Probar usando N=2 como parámetro y esperar una lista vacía.     | 
-| topPatients(N)| Registrar 3 pacientes. Uno sin consultas, otro con una, y el último con dos consultas. Probar usando N=1  y esperar una lista con los dos pacientes correspondientes.| centered      | 
+| getPatient(id,tipoid)| Consulta a paciente que existe | Registrar un paciente, consultarlo a través de los servcios, y rectificar que sea el mismo | 
+| getPatient(id,tipoid)| Consulta a paciente que no existe | Consultar a través de los servicios un paciente no registrado, y esperar que se produzca el error | 
+| topPatients(N)| No existen pacientes con N o más consultas | Registrar un paciente con sólo 1 consulta. Probar usando N=2 como parámetro y esperar una lista vacía. | 
+| topPatients(N)| Registrar 3 pacientes. Uno sin consultas, otro con una, y el último con dos consultas. Probar usando N=1 y esperar una lista con los dos pacientes correspondientes.| centered |
 
 10. Rectifique el resultado de las pruebas mediante
 
