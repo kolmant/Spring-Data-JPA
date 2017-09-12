@@ -76,7 +76,7 @@ public interface PatientsRepository extends JpaRepository<Paciente, PacienteId>
 	spring.jpa.show-sql = true
 	logging.level.org.hibernate.SQL=DEBUG
 	logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
-```
+	```
 
 	**application-test.properties**
 
