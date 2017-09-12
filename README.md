@@ -128,7 +128,7 @@ public interface PatientsRepository extends JpaRepository<Paciente, PacienteId>
 
 	```
 	mvn test
-```
+	```
 
 
 11. Finalmente, configure su aplicación para que pueda generar documentación de sí misma, incluyendo -entre otros-: cubrimiento de pruebas y análisis estático de código. Para hacer esto, agregue el siguiente elemento en el pom.xml, como elemento hijo de <project>:
